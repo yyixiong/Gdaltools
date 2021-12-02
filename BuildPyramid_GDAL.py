@@ -28,6 +28,6 @@ def Build_Pyramid_GDAL(input_image, method = 0): # 0 = read-only, building exter
     
     
 if __name__ == '__main__': 
-    image_list = [r"\\kaki\f\A001_CwRS_ProcessingDisk2\LPIS\03_StretchTo8bitTIF\21JUL23105836_S2AS_LPIS_NL_01_RGB.tif"]
+    image_list = [r"d:\mytif.tif"]
     for InputImage in image_list:
         Build_Pyramid_GDAL(InputImage)
