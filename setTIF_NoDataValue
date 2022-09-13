@@ -1,0 +1,7 @@
+def setTIF_NoDataValue(input_path, NoDataValue = 0):
+    dataset = gdal.Open( input_path, gdal.GA_Update )
+    band = dataset.GetRasterBand(1)
+    band.SetNoDataValue(NoDataValue)
+    band.FlushCache()
+    band = None
+    dataset = None
